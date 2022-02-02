@@ -11,7 +11,7 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Noto+Sans+JP:wght@100;300;400;500&display=swap" rel="stylesheet">
     <title>Document</title>
 
@@ -46,24 +46,77 @@
         </div>
     </nav>
   <!-- Empowering Teams -->
-  <section>
-    <div class="container empower">
-        <div>
+  <section class="empower-sec">
+    <div class="empower-wrap container">
+        <div class="empower-left" >
             <div>
                 <h1>Empowering teams with the freedom</h1>
                 <p>Own the unlimited power of the web development</p>
             </div>
             <div>
                 <span><a class="btn btn-primary"href="#">Play Video</a></span>
-                <span><a class="link" href="#">Learn More   ></a></span>
+                <span><a class="learn-more" href="#">Learn More  ></a></span>
             </div>
         </div>
-        <div>
-
+        <div class="empower-right" >
+            <div class="logo-bubble google">
+                <img src="./Assets/logo_icons/google.png" alt="Google Logo">
+            </div>
+            <div class="logo-bubble paypal">
+                <img src="./Assets/logo_icons/paypal.jpg" alt="Paypal Logo">
+            </div>
+            <div class="logo-bubble asana">
+                <img src="./Assets/logo_icons/asana.png" alt="Asana Logo">
+            </div>
+            <div class="logo-bubble atlassian">
+                <img src="./Assets/logo_icons/atlassian.png" alt="Atlassian Logo">
+            </div>
+            <div class="logo-bubble calender">
+                <img src="./Assets/logo_icons/calendar.png" alt="Calender Logo">
+            </div>
+            <div class="logo-bubble google-ads">
+                <img src="./Assets/logo_icons/google-ads.png" alt="Google-ads Logo">
+            </div>
+            <div class="logo-bubble weave">
+                <img src="./Assets/logo_icons/weave.png" alt="Weave Logo">
+            </div> 
         </div>
     </div>
+</section>
 
-  </section>
+<!-- Benefits -->
+<section class="container">
+    <div class="benefits-title" >
+        <h2>Key Benefits</h2>
+        <p>Design faster with a growing array of beautiful templates.</p>
+    </div>
+    <div class="key-grid">
+        <div class="card">
+            <img src="./Assets/icons/responsive.svg" alt="">
+            <h4>Responsive</h4>
+            <p>Front is an incredibly beautiful, fully responsive, and mobile-first projects on the web.</p>
+            <a class="learn-more" href="#">Learn More ></a>
+        </div>
+        <div class="card">
+            <img src="./Assets/icons/responsive.svg" alt="">
+            <h4>Customizable</h4>
+            <p>Front template can be easily customized with its cutting-edge components and features.</p>
+            <a class="learn-more" href="#">Learn More ></a>
+        </div>
+        <div class="card">
+            <img src="./Assets/icons/responsive.svg" alt="">
+            <h4>Premium</h4>
+            <p>Front is not only for developers but also for designers, and includes a Sketch file.</p>
+            <a class="learn-more" href="#">Learn More ></a>
+        </div>
+        <div class="card">
+            <img src="./Assets/icons/responsive.svg" alt="">
+            <h4>Documentation</h4>
+            <p>Every component and plugin is well documented with live examples.</p>
+            <a class="learn-more" href="#">Learn More ></a>
+        </div>
+    </div>
+</section>
 </body>
 <script>
     const nav = document.getElementById("topNav");

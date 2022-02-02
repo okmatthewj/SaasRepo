@@ -6,7 +6,7 @@
     z-index: 100;
     transition: ease-in-out 0.3s;
     font-family: 'Lato', sans-serif;
-    padding: var(--size-16);
+    padding: var(--size-16) 0;
 }
 .navbar.sticky {
     background: white;
@@ -58,7 +58,6 @@
 }
 .nav-link a {
     color: var(--font-color-base);
-    font-weight: 600;
     /* incase we stack these items for mobile, in place of margin */
     line-height: 20px;
 }
@@ -68,7 +67,7 @@
 
 .nav-link .btn.btn-primary{
     color: white;
-    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
 }
 
 .navbar-brand img{
@@ -96,17 +95,86 @@
       color: #666;
   }
 }
-.empower{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    margin-top: var(--size-150);
-    background: linear-gradient(-9deg, white 0 31%, rgba(248,249,251,1.0) 32% 100%)
+.empower-sec{
+    background: linear-gradient(173deg, white 0 17%, rgba(248,249,251,1.0) 30% 70.71%, white 71% 80%);
+    margin-bottom: var(--size-100);
 }
-.empower p{
+.empower-wrap{
+    padding-top: 138px;
+    padding-bottom: 50px;
+    display: grid;
+    gap: 10%;
+    grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+    min-width: 345px;
+}
+.empower-wrap p{
     font-size: var(--size-18);
 }
-.link{
+
+.learn-more{
     color: var(--button);
     font-weight: 700;
     margin-left: 14px;
+}
+.empower-left{
+    padding-bottom: 60px
+}
+.empower-right{
+    position: relative;
+    min-height: 303px;
+}
+.logo-bubble{
+    position: absolute;
+    box-sizing: initial;
+    border-radius: 50%;
+    border: solid thin transparent;
+    box-shadow: 0px 8px 17px -3px rgb(196 196 196 / 87%);
+    padding: 16px;
+    max-width: 40px;
+    background: white;
+}
+
+.paypal{
+    bottom: 40%;
+}
+.asana{
+    right: 0;
+}
+.atlassian{
+    right: 50%;
+    top: 12%;
+}
+.calender{
+    bottom: 0;
+    right: 0;
+}
+.google-ads{
+    bottom: 10%;
+    right: 55%;
+}
+.weave{
+    right: 18%;
+    bottom: 36%;
+}
+.benefits-title{
+    text-align: center;
+    margin-bottom: var(--size-30);
+}
+.key-grid{
+    display: grid;
+    gap: var(--size-20);
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+}
+.card{
+    padding: var(--size-20);
+    box-shadow: 0px 8px 17px -3px rgb(196 196 196 / 87%);
+}
+.card .learn-more{
+    font-size: var(--size-12);
+    margin-left: 0;
+
+}
+.card img{
+    max-width: var(--size-50);
 }
